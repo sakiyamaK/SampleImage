@@ -1,0 +1,5 @@
+DefaultTemplateDirectoryPath: ./templates/PuiTemplate/
+Target: Template_SampleiOSUIKit
+
+MVC:
+  GenerateRootPath: ./
