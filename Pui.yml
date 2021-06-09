@@ -1,5 +1,4 @@
-DefaultTemplateDirectoryPath: ./templates/PuiTemplate/
-Target: Template_SampleiOSUIKit
-
-MVC:
-  GenerateRootPath: ./
+VIPER:
+  Target: SampleImage
+  TemplateDirectoryPath: ./templates/PuiTemplate/ios/VIPER
+  GenerateRootPath: ./SampleImage

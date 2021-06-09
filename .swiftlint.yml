@@ -1,5 +1,5 @@
 included:
-  - Template_SampleiOSUIKit
+  - SampleImage
 
 excluded:
   - Pods
@@ -24,7 +24,8 @@ disabled_rules:
   - type_body_length
   # オーディオメニュー選択時が6パラメータある
   - function_parameter_count
-
+  - force_cast
+  
 file_length:
   - 800 # warning
   - 1000 # error

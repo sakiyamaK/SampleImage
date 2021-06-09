@@ -1,4 +1,4 @@
-name: Template_SampleiOSUIKit
+name: SampleImage
 # configs:
 #     Debug: debug
 #     Release: release
@@ -20,17 +20,17 @@ configs:
   Debug: debug
   Release: release
 schemes:
-  Template_SampleiOSUIKit:
+  SampleImage:
     build:
       targets:
-        Template_SampleiOSUIKit: all
+        SampleImage: all
     run:
       config: Debug
     test:
       config: Debug
       gatherCoverageData: true
       coverageTargets:
-        - Template_SampleiOSUIKit
+        - SampleImage
     profile:
       config: Release
     analyze:
@@ -39,23 +39,22 @@ schemes:
       config: Release
 
 targets:
-  Template_SampleiOSUIKit:
+  SampleImage:
     platform: iOS
     type: application
     dependencies:
-        - package: IQKeyboardManagerSwift
-        - package: SnapKit
+      - package: IQKeyboardManagerSwift
+      - package: SnapKit
     sources:
-      - path: Template_SampleiOSUIKit/
+      - path: SampleImage/
     preBuildScripts:
         - path: /bin/sh
-          name: Run Script(SwiftLint.swift)
+          name: Run Script(SwiftLint)
           script: |
             if which swiftlint >/dev/null; then
-              swiftlint autocorrect --format
               swiftlint
             else
-              echo "SwiftLint does not exist, download from https://github.com/realm/SwiftLint"
+              echo "warning: Mintがインストールされていません。こちらからダウンロードしてください https://github.com/yonaskolb/Mint"
             fi
         - path: /bin/sh
           name: Run Script(R.swift)

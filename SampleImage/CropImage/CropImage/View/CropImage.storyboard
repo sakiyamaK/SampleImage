@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOa-SI-twv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Crop Image View Controller-->
+        <scene sceneID="ctg-4H-50b">
+            <objects>
+                <viewController id="wOa-SI-twv" customClass="CropImageViewController" customModule="SampleImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UiU-xH-lu7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="AaC-mc-pcA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-Jp-Btl">
+                                <rect key="frame" x="168" y="429" width="78" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="10" maxX="16" maxY="10"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Djs-L7-zNm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AaC-mc-pcA" firstAttribute="top" secondItem="UiU-xH-lu7" secondAttribute="top" id="1zD-kc-bbc"/>
+                            <constraint firstItem="AaC-mc-pcA" firstAttribute="leading" secondItem="UiU-xH-lu7" secondAttribute="leading" id="STB-tt-CNi"/>
+                            <constraint firstItem="Knh-Jp-Btl" firstAttribute="centerX" secondItem="UiU-xH-lu7" secondAttribute="centerX" id="W5h-7H-1gi"/>
+                            <constraint firstItem="Knh-Jp-Btl" firstAttribute="centerY" secondItem="UiU-xH-lu7" secondAttribute="centerY" id="bPH-Mt-TBa"/>
+                            <constraint firstAttribute="bottom" secondItem="AaC-mc-pcA" secondAttribute="bottom" id="dGS-xN-3EM"/>
+                            <constraint firstAttribute="trailing" secondItem="AaC-mc-pcA" secondAttribute="trailing" id="yVq-i5-5S3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="croppedButton" destination="Knh-Jp-Btl" id="FRr-0V-V3a"/>
+                        <outlet property="imageView" destination="AaC-mc-pcA" id="JfH-YT-P0w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9V-zt-kb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test" width="270" height="270"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

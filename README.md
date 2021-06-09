@@ -1,4 +1,4 @@
-# Template_SampleiOSUIKit
+# SampleImage
 XcodeGenを使ってiOSアプリをUIKitで作るときのテンプレート
 
 
@@ -42,11 +42,11 @@ XcodeGenを使ってiOSアプリをUIKitで作るときのテンプレート
 
 テスト結果,カバレッジ計測結果,ソースコードドキュメントはS3にアップロードされるため、S3でバケットを用意しておく必要がある
 
-もしくは[swift.yml](https://github.com/sakiyamaK/Template_SampleiOSUIKit/blob/main/.github/workflows/swift.yml)のS3関係の記述を削除する
+もしくは[swift.yml](https://github.com/sakiyamaK/SampleImage/blob/main/.github/workflows/swift.yml)のS3関係の記述を削除する
 
 ## change text
 
-使うときはこのブランチをコピーして以下のファイル内に記載の`Template_SampleiOSUIKit`部分を任意なものに変更する
+使うときはこのブランチをコピーして以下のファイル内に記載の`SampleImage`部分を任意なものに変更する
 
 `MakeFile`
 
@@ -59,7 +59,7 @@ XcodeGenを使ってiOSアプリをUIKitで作るときのテンプレート
 `.jazzy.yaml`
 
 
-[swift.yml](https://github.com/sakiyamaK/Template_SampleiOSUIKit/blob/main/.github/workflows/swift.yml)のみ`templateiosuikit`という記載を任意なものに変更する
+[swift.yml](https://github.com/sakiyamaK/SampleImage/blob/main/.github/workflows/swift.yml)のみ`templateiosuikit`という記載を任意なものに変更する
 
 
 # start
